@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+       <meta charset="UTF-8">
+       <title>Index</title>
+        <link rel="stylesheet" href="global.css">
+        <style>
+    /* Estils d'index */
+    .hero {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .hero button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .hero button:hover {
+      background-color: #e68a00;
+    }
+
+    /* Banda de beneficis amb flex */
+    .beneficis {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+    }
+
+    .benefici-item {
+      font-weight: bold;
+    }
+
+    /* Secció de col·leccions */
+    .colleccions {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    .card span {
+      background-color: #eee;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú Fixed -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Tienda de ropa</a>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Inici</a></li>
+        <li><a href="productes.html">Productes</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contingut Principal -->
+  <main>
+    <div class="container">
+      
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Benvinguts a ModaJove</h1>
+        <p>Troba la millor roba casual per a aquesta temporada al millor preu.</p>
+        <button onclick="window.location.href='productes.html'">Veure Productes</button>
+      </section>
+
+      <!-- Banda de Beneficis -->
+      <section class="beneficis">
+        <div class="benefici-item">Enviament 48h</div>
+        <div class="benefici-item">·</div>
+        <div class="benefici-item">Canvis gratuïts</div>
+        <div class="benefici-item">·</div>
+        <div class="benefici-item">Pagament segur</div>
+      </section>
+
+      <!-- Secció Col·leccions (3 cartes) -->
+      <h2>Les nostres seccions</h2>
+      <br>
+      <section class="colleccions">
+        <div class="card">
+          <h3>Roba d'Hivern</h3>
+          <p>Jerseis, abrics i chaquetes per no passar fred.</p>
+          <span>Hivern</span>
+          <span>Calent</span>
+        </div>
+
+        <div class="card">
+          <h3>Camisetes i Tops</h3>
+          <p>Camisetes de cotó de molts colors i dissenys.</p>
+          <span>Estiu</span>
+          <span>Cotó</span>
+        </div>
+
+        <div class="card">
+          <h3>Pantalons i Jeans</h3>
+          <p>Texans de tots els estils i pantalons de xandall.</p>
+          <span>Casual</span>
+          <span>Jeans</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Peu -->
+  <footer>
+    <p>&copy; 2026 ModaJove - Tots els drets reservats</p>
+    <p>Correu: <a href="mailto:info@modajove.com">info@modajove.com</a></p>
+  </footer>
+
+</body>
+</html>
