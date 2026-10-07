@@ -4,4 +4,120 @@
        <meta charset="UTF-8">
        <title>Productes</title>
         <link rel="stylesheet" href="global.css">
-        
+        <style>
+    .filtres {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .filtres strong, .filtres a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .filtres a.active {
+      font-weight: bold;
+      color: #ff9900;
+    }
+
+    .productes-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .producte-card {
+      flex: 1 1 260px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .producte-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .producte-card p {
+      color: #ff9900;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .producte-card small {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Zara</a>
+      <ul class="menu">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="productes.html" class="active">Productes</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <h1>Els nostres Productes</h1>
+      <br>
+
+      <div class="filtres">
+        <strong>Filtres:</strong>
+        <a href="#" class="active">Tots</a>
+        <a href="#">Camisetes</a>
+        <a href="#">Pantalons</a>
+        <a href="#">Jaquetes</a>
+      </div>
+
+      <div class="productes-grid">
+
+        <div class="producte-card">
+          <h3>Camiseta Blanca Basic</h3>
+          <small>Cotó 100% - Talla M/L</small>
+          <p>12,99 €</p>
+        </div>
+
+        <div class="producte-card">
+          <h3>Sudadera amb Caputxa</h3>
+          <small>Color Negre - Unisex</small>
+          <p>25,50 €</p>
+        </div>
+
+        <div class="producte-card">
+          <h3>Pantalons Texans</h3>
+          <small>Estil Regular Fit</small>
+          <p>29,99 €</p>
+        </div>
+
+        <div class="producte-card">
+          <h3>Jaqueta de Cuir Ficticia</h3>
+          <small>Temporada d'Hivern</small>
+          <p>45,00 €</p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Zara - Tots els drets reservats</p>
+    <p>Correu: <a href="mailto:info@Zara.com">info@Zara.com</a></p>
+  </footer>
+
+</body>
+</html>
